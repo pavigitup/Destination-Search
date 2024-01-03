@@ -1,8 +1,8 @@
 const DestinationItem = props => {
-  const {destination} = props
-  const {id, name, imgUrl} = destination
+  const {destination, key} = props
+  const {name, imgUrl} = destination
   return (
-    <li key={id} className="card" style={{margin: '20px'}}>
+    <li key={key} className="card" style={{margin: '20px'}}>
       <img src={imgUrl} alt={name} className="city-img" />
       <p className="head-name">{name}</p>
     </li>
