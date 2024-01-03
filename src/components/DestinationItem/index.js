@@ -1,10 +1,11 @@
 const DestinationItem = props => {
   const {destination} = props
+  const {id, name, imgUrl} = destination
   return (
-    <div key={destination.id} className="card" style={{margin: '20px'}}>
-      <img src={destination.imgUrl} alt="img" className="city-img" />
-      <h1 className="head-name">{destination.name}</h1>
-    </div>
+    <li key={id} className="card" style={{margin: '20px'}}>
+      <img src={imgUrl} alt={name} className="city-img" />
+      <p className="head-name">{name}</p>
+    </li>
   )
 }
 
